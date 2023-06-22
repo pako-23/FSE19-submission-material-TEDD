@@ -88,13 +88,10 @@ EOF
     v.cpus = VM_CPUS
   end
 
-  config.vm.provider :virtualbox do |v|
+  config.vm.provider "virtualbox" do |v|
     v.memory = VM_MEMORY
     v.cpus = VM_CPUS
   end
 
   config.vm.provision :shell, inline: $script, privileged: false
 end
-
-
-# Xvfb :0 -ac -screen 0 1024x768x24 &

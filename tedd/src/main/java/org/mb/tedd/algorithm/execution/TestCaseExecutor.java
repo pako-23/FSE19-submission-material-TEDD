@@ -45,6 +45,55 @@ public class TestCaseExecutor<T> {
         return projectPath + Properties.file_separator + "target" + Properties.file_separator + "classes";
     }
 
+    public List<TestResult> executeTestsRemoteJUnitCore(List<String> schedule)
+            throws IOException, InterruptedException, ExecutionException {
+        Map.Entry<Integer, List<String>> testResult = this.remoteExecutionWithJUnitCore(schedule);
+
+        if (testResult.getKey() != schedule.size()) {
+            // logger.debug("ERROR TEST COUNT DOES NOT RUN !!! ");
+            // logger.debug(testResult.getKey() + " != " + schedule.size());
+            throw new RuntimeException("Some tests did not run ! ");
+        }
+
+        List<String> failedTests = testResult.getValue();
+        int j = 0;
+        List<TestResult> ret = new ArrayList<>();
+
+        for (int i = 0; i < schedule.size(); ++i) {
+            if (j < failedTests.size() && schedule.get(i).equals(failedTests.get(j))) {
+                ret.add(TestResult.FAIL);
+                ++j;
+            } else {
+                ret.add(TestResult.PASS);
+            }
+        }
+
+        // Map<GraphNode<T>, TestResult> ret = new HashMap<>();
+        // for (String test: schedule) {
+        //     Optional<GraphNode<T>> graphNodeFoundOptional = theSchedule.stream()
+        //             .filter(graphNode -> graphNode.getTestCase().toString().equals(test))
+        //             .findAny();
+        //     if(graphNodeFoundOptional.isPresent()){
+        //         ret.put(graphNodeFoundOptional.get(), TestResult.PASS);
+        //     } else {
+        //         throw new RuntimeException("GraphNode named " + test + " not found");
+        //     }
+        // }
+
+        // for (String failed: testResult.getValue()) {
+        //     Optional<GraphNode<T>> graphNodeFoundOptional = theSchedule.stream()
+        //             .filter(graphNode -> graphNode.getTestCase().toString().equals(failed))
+        //             .findAny();
+        //     if(graphNodeFoundOptional.isPresent()){
+        //         ret.put(graphNodeFoundOptional.get(), TestResult.FAIL);
+        //     } else {
+        //         throw new RuntimeException("GraphNode named " + failed + " not found");
+        //     }
+        // }
+
+        return ret;
+    }
+    
     /*
      * Spin off a new JVM with JUnitCore inside, this is faster than CUT but
      * works only in the local VM ATM.
