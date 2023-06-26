@@ -1,42 +1,138 @@
 package org.mb.tedd.main;
 
-import com.google.common.base.Preconditions;
-import org.apache.log4j.Logger;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import org.jgrapht.Graph;
-import org.mb.tedd.algorithm.refinement.DependencyRefiner;
-import org.mb.tedd.graph.DependencyGraphManager;
-import org.mb.tedd.graph.GraphEdge;
-import org.mb.tedd.graph.GraphNode;
-import org.mb.tedd.graph.dot.exportgraph.GraphExporter;
-import org.mb.tedd.utils.ExecutionTime;
+import java.util.Set;
+import java.util.HashSet;
+import java.util.Map;
 import org.mb.tedd.utils.Properties;
 import org.mb.tedd.algorithm.execution.TestCaseExecutor;
+import org.mb.tedd.algorithm.execution.TestResult;
 
-public class BigTable {
-    static void algorithm() {
-        try {
-            Properties.getInstance().createPropertiesFile();
-            TestCaseExecutor<String> testCaseExecutor = new TestCaseExecutor<>();
-
-            List<String> schedule = new ArrayList<>();
-            for (String test : Properties.tests_order) schedule.add(test);
-
-            // for( int i =0;i<Properties.tests_order.length;i++) {
-            //     // System.out.println( Properties.tests_order[i] );
-            //     schedule.add( Properties.tests_order[i] );
-            // }
-            // testCaseExecutor.executeTestsRemoteJUnitCore( Properties.tests_order );
-
-            testCaseExecutor.executeTestsRemoteJUnitCore(schedule);
-        } catch (Exception e) {
-            System.out.println("Blyaat");
-        }
-        
+public class BigTable
+{
+    private static List<String> getTests()
+    {
+        final List<String> tests = new ArrayList<>();
+        for (final String test : Properties.tests_order) tests.add(test);
+        return tests;
     }
 
-    public static void main(String[] args){
-        algorithm();
+    private static List<String> getSchedule(List<Map.Entry<Integer, String>> tests)
+    {
+        List<String> schedule = new ArrayList<>();
+        for (final Map.Entry<Integer, String> test : tests)
+            schedule.add(test.getValue());
+        return schedule;
+    }
+
+    private static void algorithm() throws Exception
+    {
+        final TestCaseExecutor<String> executor = new TestCaseExecutor<>();
+        final List<String> tests = getTests();
+
+        final Set<Map.Entry<Integer, String>> notPassed = new HashSet<>();
+        final Map<Integer, List<List<Map.Entry<Integer, String>>>> table =
+            new HashMap<>();
+        final Set<List<Map.Entry<Integer, String>>> workingSchedules = new HashSet<>();
+
+        for (int i = 0; i < tests.size(); ++i) {
+            final String test = tests.get(i);
+            List<String> schedule = new ArrayList<>();
+            schedule.add(test);
+            if (executor.runTests(schedule).get(0) == TestResult.PASS) {
+                if (!table.containsKey(1)) table.put(1, new ArrayList<>());
+                List<Map.Entry<Integer, String>> s = new ArrayList<>();
+                s.add(Map.entry(i, tests.get(i)));
+                table.get(1).add(s);
+                workingSchedules.add(s);
+            } else notPassed.add(Map.entry(i, tests.get(i)));
+        }
+
+        for (int rank = 2; rank <= tests.size(); ++rank) {
+            table.put(rank, new ArrayList<>());
+            final Set<Map.Entry<Integer, String>> passed = new HashSet<>();
+
+
+            for (final Map.Entry<Integer, String> test : notPassed) {
+                boolean testPassed = false;
+
+                for (final List<Map.Entry<Integer, String>> seq : table.get(rank-1)) {
+                    if (seq.get(seq.size()-1).getKey() > test.getKey()) continue;
+                    List<String> schedule = getSchedule(seq);
+                    schedule.add(test.getValue());
+                    List<TestResult> results = executor.runTests(schedule);
+                    if (results.indexOf(TestResult.FAIL) == -1) {
+                        List<Map.Entry<Integer, String>> s = new ArrayList<>(seq);
+                        s.add(test);
+                        workingSchedules.add(s);
+                        table.get(rank).add(s);
+                        passed.add(test);
+                        break;
+                    }
+                }
+
+                if (testPassed || test.getKey() != rank-1) continue;
+
+
+                Set<List<Map.Entry<Integer, String>>> baseSet = new HashSet<>(workingSchedules);
+                for (final List<Map.Entry<Integer, String>> base : baseSet) {
+                    Set<List<Map.Entry<Integer, String>>> itSet = new HashSet<>(workingSchedules);
+                    itSet.remove(base);
+                    for (final List<Map.Entry<Integer, String>> it : itSet) {
+                        Set<Map.Entry<Integer, String>> set = new HashSet<>(base);
+                        set.addAll(it);
+
+                        List<Map.Entry<Integer, String>> s = new ArrayList<>(set);
+
+                        s.sort((a, b) -> {
+                            if (a.getKey() > b.getKey()) return 1;
+                            else if (a.getKey() < b.getKey()) return -1;
+                            else return 0;
+                        });
+
+                        if (!table.containsKey(s.size()-1)) table.put(s.size()-1, new ArrayList<>());
+                        if (!workingSchedules.contains(s)) {
+                            table.get(s.size()-1).add(s);
+                            workingSchedules.add(s);
+                        }
+
+                        if (s.get(s.size()-1).getKey() < test.getKey()) {
+                            s.add(test);
+                            List<TestResult> results = executor.runTests(getSchedule(s));
+
+                            if (results.indexOf(TestResult.FAIL) == -1) {
+                                if (!table.containsKey(s.size()-1)) table.put(s.size()-1, new ArrayList<>());
+                                table.get(s.size()-1).add(s);
+                                workingSchedules.add(s);
+                                passed.add(test);
+                                testPassed = true;
+                                break;
+                            }
+                        }
+
+                    }
+                    if (testPassed) break;
+                }
+            }
+            notPassed.removeAll(passed);
+        }
+    }
+
+    public static void main(String[] args)
+    {
+      try {
+            if (args.length < 1) {
+                System.out.println("Need to provide test application");
+                System.exit(1);
+            }
+            Properties.getInstance().createPropertiesFile();
+            algorithm();
+            System.exit(0);
+        } catch (Exception e) {
+            System.err.println(e);
+            System.err.println(e.getStackTrace());
+        }
     }
 }

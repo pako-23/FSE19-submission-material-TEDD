@@ -1,3 +1,5 @@
+package org.mb.tedd.utils;
+
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -47,5 +49,39 @@ public class Graph<T>
         }
 
         return dep;
+    }
+
+    public void transitiveReduction()
+    {
+        Map<T, Set<T>> min_graph = new HashMap<>();
+        for (final Map.Entry<T, Set<T>> entry : graph.entrySet()) {
+            Set<T> min_edges = new HashSet<>(entry.getValue());
+
+            for (final T v : entry.getValue()) {
+                Set<T> deps  = getDependencies(v);
+                for (final T u : entry.getValue()) {
+                    if (deps.contains(u) && min_edges.contains(u))
+                        min_edges.remove(u);
+                }
+            }
+            min_graph.put(entry.getKey(), min_edges);
+        }
+        graph = min_graph;
+    }
+
+    public String toString()
+    {
+        String res = "digraph G {\n";
+
+        for (final Map.Entry<T, Set<T>> entry : graph.entrySet())
+            res += "    " + entry.getKey().toString() + ";\n";
+
+        for (final Map.Entry<T, Set<T>> entry : graph.entrySet())
+            for (final T target : entry.getValue())
+                res += "    " + entry.getKey().toString() + " -> " + target.toString() + ";\n";
+
+        res += "}\n";
+
+        return res;
     }
 }
