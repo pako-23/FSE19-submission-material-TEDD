@@ -52,7 +52,7 @@ public class ExLinear
             Properties.getInstance().createPropertiesFile();
             Graph<String> result = algorithm();
 
-            PrintWriter out = new PrintWriter(args[0] + ".gv");
+            PrintWriter out = new PrintWriter(args[0] + "-ex-linear.gv");
             out.print(result.toString());
             out.close();
 

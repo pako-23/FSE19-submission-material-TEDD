@@ -9,6 +9,7 @@ import java.util.Map;
 import org.mb.tedd.utils.Properties;
 import org.mb.tedd.algorithm.execution.TestCaseExecutor;
 import org.mb.tedd.algorithm.execution.TestResult;
+import java.io.PrintWriter;
 
 public class BigTable
 {
@@ -27,7 +28,7 @@ public class BigTable
         return schedule;
     }
 
-    private static void algorithm() throws Exception
+    private static Set<List<Map.Entry<Integer, String>>> algorithm() throws Exception
     {
         final TestCaseExecutor<String> executor = new TestCaseExecutor<>();
         final List<String> tests = getTests();
@@ -118,6 +119,7 @@ public class BigTable
             }
             notPassed.removeAll(passed);
         }
+        return workingSchedules;
     }
 
     public static void main(String[] args)
@@ -128,7 +130,13 @@ public class BigTable
                 System.exit(1);
             }
             Properties.getInstance().createPropertiesFile();
-            algorithm();
+            Set<List<Map.Entry<Integer, String>>> seqs = algorithm();
+
+            PrintWriter out = new PrintWriter(args[0] + "-big-table.csv");
+            for (final List<Map.Entry<Integer, String>> seq : seqs)
+                out.print(String.join(", ",  getSchedule(seq)));
+            out.close();
+
             System.exit(0);
         } catch (Exception e) {
             System.err.println(e);
