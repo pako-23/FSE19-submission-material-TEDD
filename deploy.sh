@@ -7,7 +7,7 @@ sudo apt install -y \
     ebtables \
     dnsmasq-base \
     vagrant \
-    libxslt-dev \
+    libxslt1-dev \
     libvirt-dev \
     ruby-dev
 
