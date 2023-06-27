@@ -4,13 +4,14 @@ sudo apt update -y && sudo apt upgrade -y
 
 sudo apt install -y \
     qemu \
-    libvirt-bin \
     ebtables \
     dnsmasq-base \
     vagrant \
     libxslt-dev \
     libvirt-dev \
     ruby-dev
+
+vagrant plugin install vagrant-libvirt
 
 cat > vagrant-libvirt.xml <<EOF
 <network connections='1'>
