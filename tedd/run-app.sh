@@ -35,7 +35,6 @@ where:
 EOT
 }
 
-
 validate_option() {
     local options="$(clean_vars "$1")"
     local option="$(clean_vars "$2")"
@@ -53,12 +52,17 @@ validate_option() {
     return 0
 }
 
-
 get_algorithm() {
     local algorithm="$(clean_vars "$1")"
     echo "$ALGORITHMS" | grep "$algorithm" | cut -d '|' -f2
 }
 
+set_application() {
+    local app="$(clean_vars "$1")"
+    local props="$(find src -name 'app.properties')"
+    sed -i "s/project_name=.*/project_name=$app/g" $props
+    sed -i "s/testsuite-[^\/]*/testsuite-$app/g" $props
+}
 
 while [ $# -gt 0 ]; do
     case $1 in
@@ -108,6 +112,8 @@ EOF
 container="$(cd "../testsuite-$TEST_SUITE"; ./run-docker.sh -p yes -n "$TEST_SUITE" | tail -1)"
 
 sleep 2s
+
+set_application "$TEST_SUITE"
 
 java -cp $classpath "$(get_algorithm "$ALGORITHM")" "$TEST_SUITE"
 
