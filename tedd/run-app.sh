@@ -60,8 +60,14 @@ get_algorithm() {
 set_application() {
     local app="$(clean_vars "$1")"
     local props="$(find src -name 'app.properties')"
+    cd "../testsuite-$TEST_SUITE"
+    mvn compile
+    local app_cp="$(mvn dependency:build-classpath -Dmdep.outputFile=/dev/stdout -q)"
+    cd -
+
     sed -i "s/project_name=.*/project_name=$app/g" $props
     sed -i "s/testsuite-[^\/]*/testsuite-$app/g" $props
+    sed -i "s|project_classpath=.*|project_classpath=$app_cp|g" $props
 }
 
 while [ $# -gt 0 ]; do
@@ -100,7 +106,8 @@ fi
 
 mvn compile
 
-classpath="$(find ~/.m2/repository/ -name '*.jar' | paste -sd ':' -):./target/classes"
+classpath="$(mvn dependency:build-classpath -Dmdep.outputFile=/dev/stdout -q):./target/classes"
+set_application "$TEST_SUITE"
 
 cat <<EOF
 =====================================================================================
@@ -108,12 +115,9 @@ cat <<EOF
 =====================================================================================
 EOF
 
-
 container="$(cd "../testsuite-$TEST_SUITE"; ./run-docker.sh -p yes -n "$TEST_SUITE" | tail -1)"
 
 sleep 2s
-
-set_application "$TEST_SUITE"
 
 java -cp $classpath "$(get_algorithm "$ALGORITHM")" "$TEST_SUITE"
 

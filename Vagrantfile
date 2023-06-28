@@ -11,15 +11,14 @@ Vagrant.configure("2") do |config|
       curl \
       gnupg \
       maven \
-      firefox-esr \
       graphviz
     sudo install -m 0755 -d /etc/apt/keyrings
-    curl -fsSL https://download.docker.com/linux/debian/gpg | \
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
       sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
     sudo chmod a+r /etc/apt/keyrings/docker.gpg
     echo \
       "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] \
-      https://download.docker.com/linux/debian \
+      https://download.docker.com/linux/ubuntu \
       "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
       sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
     wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub > google_key.pub
@@ -34,9 +33,9 @@ Vagrant.configure("2") do |config|
       docker-ce-cli \
       containerd.io \
       google-chrome-stable \
+      firefox \
       xvfb
     sudo apt-get autoremove -y
-    # sudo groupadd docker
     sudo usermod -aG docker vagrant
     cat <<EOF | sudo tee /etc/systemd/system/x11.service
 [Unit]
@@ -81,7 +80,7 @@ EOF
     echo 'export DISPLAY=unix:0.0' >> ~/.bashrc
   END
 
-  config.vm.box = "debian/bullseye64"
+  config.vm.box = "generic/ubuntu2004"
 
   config.vm.provider "libvirt" do |v|
     v.memory = VM_MEMORY
@@ -92,6 +91,8 @@ EOF
     v.memory = VM_MEMORY
     v.cpus = VM_CPUS
   end
+
+  config.vm.synced_folder '.', '/vagrant', type: 'nfs', nfs_version: 4, nfs_udp: false
 
   config.vm.provision :shell, inline: $script, privileged: false
 end
