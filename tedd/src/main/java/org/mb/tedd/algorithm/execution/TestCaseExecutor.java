@@ -4,6 +4,8 @@ import org.apache.log4j.Logger;
 import org.mb.tedd.graph.GraphNode;
 import org.mb.tedd.utils.Properties;
 
+import hep.aida.ref.Test;
+
 import java.io.File;
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -49,17 +51,22 @@ public class TestCaseExecutor<T> {
             throws IOException, InterruptedException, ExecutionException {
         Map.Entry<Integer, List<String>> testResult = this.remoteExecutionWithJUnitCore(schedule);
 
-        if (testResult.getKey() != schedule.size()) {
-            logger.debug("ERROR TEST COUNT DOES NOT RUN !!! ");
-            logger.debug(testResult.getKey() + " != " + schedule.size());
-            throw new RuntimeException("Some tests did not run ! ");
-        }
+        // if (testResult.getKey() != schedule.size()) {
+        //     logger.debug("ERROR TEST COUNT DOES NOT RUN !!! ");
+        //     logger.debug(testResult.getKey() + " != " + schedule.size());
+        //     throw new RuntimeException("Some tests did not run ! ");
+        // }
 
         Set<String> failedTests = new HashSet<>(testResult.getValue());
         List<TestResult> ret = new ArrayList<>();
 
-        for (final String test : schedule)
-            ret.add(failedTests.contains(test) ? TestResult.FAIL : TestResult.PASS);
+        for (final String test : schedule) {
+            if (failedTests.contains(test)) {
+                ret.add(TestResult.FAIL);
+                break;
+            } else ret.add(TestResult.PASS);
+        }
+        while(ret.size() < schedule.size()) ret.add(TestResult.FAIL);
 
         return ret;
     }

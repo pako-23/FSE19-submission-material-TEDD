@@ -126,6 +126,7 @@ public class RemoteJUnitCore {
                 for (String test: testList){
                     Result r = core.run(Class.forName(getTestCaseClassName(test, projectPackageStructure)));
                     results.add(r);
+                    if (!r.wasSuccessful()) break;
                 }
                 long executionTime = System.currentTimeMillis() - startTime;
 

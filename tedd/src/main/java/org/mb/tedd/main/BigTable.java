@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.Map;
+
+import org.mb.tedd.utils.Graph;
 import org.mb.tedd.utils.Properties;
 import org.mb.tedd.algorithm.execution.TestCaseExecutor;
 import org.mb.tedd.algorithm.execution.TestResult;
@@ -13,6 +15,10 @@ import java.io.PrintWriter;
 
 public class BigTable
 {
+
+    private static long testRuns = 0;
+    private static long testSuiteRuns = 0;
+
     private static List<String> getTests()
     {
         final List<String> tests = new ArrayList<>();
@@ -42,6 +48,8 @@ public class BigTable
             final String test = tests.get(i);
             List<String> schedule = new ArrayList<>();
             schedule.add(test);
+            ++testSuiteRuns;
+            ++testRuns;
             if (executor.runTests(schedule).get(0) == TestResult.PASS) {
                 if (!table.containsKey(1)) table.put(1, new ArrayList<>());
                 List<Map.Entry<Integer, String>> s = new ArrayList<>();
@@ -64,14 +72,17 @@ public class BigTable
                     List<String> schedule = getSchedule(seq);
                     schedule.add(test.getValue());
                     List<TestResult> results = executor.runTests(schedule);
-                    if (results.indexOf(TestResult.FAIL) == -1) {
+                    ++testSuiteRuns;
+                    int first_failed = results.indexOf(TestResult.FAIL);
+                    if (first_failed == -1) {
+                        testRuns += results.size();
                         List<Map.Entry<Integer, String>> s = new ArrayList<>(seq);
                         s.add(test);
                         workingSchedules.add(s);
                         table.get(rank).add(s);
                         passed.add(test);
                         break;
-                    }
+                    } else testRuns += first_failed + 1;
                 }
 
                 if (testPassed || test.getKey() != rank-1) continue;
@@ -102,17 +113,18 @@ public class BigTable
                         if (s.get(s.size()-1).getKey() < test.getKey()) {
                             s.add(test);
                             List<TestResult> results = executor.runTests(getSchedule(s));
-
-                            if (results.indexOf(TestResult.FAIL) == -1) {
+                            ++testSuiteRuns;
+                            int first_failed = results.indexOf(TestResult.FAIL);
+                            if (first_failed == -1) {
+                                testRuns += results.size();
                                 if (!table.containsKey(s.size()-1)) table.put(s.size()-1, new ArrayList<>());
                                 table.get(s.size()-1).add(s);
                                 workingSchedules.add(s);
                                 passed.add(test);
                                 testPassed = true;
                                 break;
-                            }
+                            } else testRuns += first_failed + 1;
                         }
-
                     }
                     if (testPassed) break;
                 }
@@ -130,11 +142,19 @@ public class BigTable
                 System.exit(1);
             }
             Properties.getInstance().createPropertiesFile();
+            long startTime = System.currentTimeMillis();
             Set<List<Map.Entry<Integer, String>>> seqs = algorithm();
+            long executionTime = System.currentTimeMillis() - startTime;
 
             PrintWriter out = new PrintWriter(args[0] + "-big-table.csv");
             for (final List<Map.Entry<Integer, String>> seq : seqs)
-                out.print(String.join(", ",  getSchedule(seq)));
+                out.println(String.join(", ",  getSchedule(seq)));
+            out.close();
+
+            out = new PrintWriter(args[0] + "-big-table-statistics.txt");
+            out.println("Test runs: " + testRuns);
+            out.println("Test-suite runs: " + testSuiteRuns);
+            out.println("Execution time: " + executionTime);
             out.close();
 
             System.exit(0);

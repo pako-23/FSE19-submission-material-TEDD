@@ -10,6 +10,9 @@ import java.io.PrintWriter;
 
 public class ExLinear
 {
+    private static long testRuns = 0;
+    private static long testSuiteRuns = 0;
+
     private static List<String> getTests()
     {
         final List<String> tests = new ArrayList<>();
@@ -27,14 +30,19 @@ public class ExLinear
             final List<String> schedule = new ArrayList<>(tests);
             schedule.remove(i);
             List<TestResult> results = executor.runTests(schedule);
-
             int first_failed = results.indexOf(TestResult.FAIL);
+            ++testSuiteRuns;
+            if (first_failed == -1) testRuns += results.size();
+            else testRuns += first_failed + 1;
 
             while (first_failed != -1) {
                 g.addEdge(schedule.get(first_failed), tests.get(i));
                 schedule.remove(first_failed);
                 results = executor.runTests(schedule);
                 first_failed = results.indexOf(TestResult.FAIL);
+                ++testSuiteRuns;
+                if (first_failed == -1) testRuns += results.size();
+                else testRuns += first_failed + 1;
             }
         }
 
@@ -50,10 +58,20 @@ public class ExLinear
                 System.exit(1);
             }
             Properties.getInstance().createPropertiesFile();
+
+            long startTime = System.currentTimeMillis();
             Graph<String> result = algorithm();
+            long executionTime = System.currentTimeMillis() - startTime;
+
 
             PrintWriter out = new PrintWriter(args[0] + "-ex-linear.gv");
             out.print(result.toString());
+            out.close();
+
+            out = new PrintWriter(args[0] + "-statistics.txt");
+            out.println("Test runs: " + testRuns);
+            out.println("Test-suite runs: " + testSuiteRuns);
+            out.println("Execution time: " + executionTime);
             out.close();
 
             System.exit(0);

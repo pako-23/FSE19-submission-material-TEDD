@@ -117,7 +117,7 @@ EOF
 
 container="$(cd "../testsuite-$TEST_SUITE"; ./run-docker.sh -p yes -n "$TEST_SUITE" | tail -1)"
 
-sleep 2s
+sleep 4s
 
 java -cp $classpath "$(get_algorithm "$ALGORITHM")" "$TEST_SUITE"
 

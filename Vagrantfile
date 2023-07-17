@@ -1,8 +1,8 @@
 VM_CPUS = 4
 VM_MEMORY = 8192
 
-Vagrant.configure("2") do |config|
-  $script = <<-END
+Vagrant.configure('2') do |config|
+  $script = <<-SHELL
     # Install packages
     sudo apt update -y
     sudo apt upgrade -y
@@ -13,12 +13,12 @@ Vagrant.configure("2") do |config|
       maven \
       graphviz
     sudo install -m 0755 -d /etc/apt/keyrings
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
+    curl -fsSL https://download.docker.com/linux/debian/gpg | \
       sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
     sudo chmod a+r /etc/apt/keyrings/docker.gpg
     echo \
       "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] \
-      https://download.docker.com/linux/ubuntu \
+      https://download.docker.com/linux/debian \
       "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
       sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
     wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub > google_key.pub
@@ -32,8 +32,8 @@ Vagrant.configure("2") do |config|
       docker-ce \
       docker-ce-cli \
       containerd.io \
-      google-chrome-stable \
-      firefox \
+      google-chrome-stable=114.0.* \
+      firefox-esr=102.12.* \
       xvfb
     sudo apt-get autoremove -y
     sudo usermod -aG docker vagrant
@@ -65,34 +65,26 @@ EOF
     tar xvf WordNet-3.0.tar.gz
     rm -rf WordNet-3.0.tar.gz
 
-    # Compile code
+    # Setup application
     mkdir -p ~/workspace
     ln -s /vagrant ~/workspace/FSE19-submission-material
     cd ~/workspace/FSE19-submission-material/tedd/src/main/resources
     cp app.example.properties app.properties
     sed -i 's|/home/anonymous|/home/vagrant|g' app.properties
-    cd ~/workspace/FSE19-submission-material
-    for proj in $(find . -iname 'testsuite-*') tedd; do
-      cd $proj
-      mvn clean compile
-      cd ..
-    done
-    echo 'export DISPLAY=unix:0.0' >> ~/.bashrc
-  END
+    echo 'export DISPLAY=:0' >> ~/.bashrc
+  SHELL
 
-  config.vm.box = "generic/ubuntu2004"
+  config.vm.box = 'debian/bullseye64'
 
-  config.vm.provider "libvirt" do |v|
+  config.vm.provider 'libvirt' do |v|
     v.memory = VM_MEMORY
     v.cpus = VM_CPUS
   end
 
-  config.vm.provider "virtualbox" do |v|
+  config.vm.provider 'virtualbox' do |v|
     v.memory = VM_MEMORY
     v.cpus = VM_CPUS
   end
-
-  config.vm.synced_folder '.', '/vagrant', type: 'nfs', nfs_version: 4, nfs_udp: false
 
   config.vm.provision :shell, inline: $script, privileged: false
 end

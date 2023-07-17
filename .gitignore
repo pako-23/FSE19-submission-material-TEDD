@@ -19,3 +19,4 @@ tedd/src/main/resources/app.properties
 package.box
 .vagrant/
 tedd/src/main/resources/*.txt
+*.csv
