@@ -51,6 +51,7 @@ public class BaselineCompleteGraph {
                 graphExporter.export("dependency-graph-final-baseline");
 
             } catch (Exception e) {
+                System.out.println("Exception occurred: " + e.getMessage());
                 e.printStackTrace();
                 System.exit(1);
             }
