@@ -3,6 +3,7 @@
 ALGORITHMS='
     ex-linear|org.mb.tedd.main.ExLinear
     big-table|org.mb.tedd.main.BigTable
+    pradet|org.mb.tedd.main.BaselineCompleteGraph
 '
 TEST_SUITES="$(ls .. | grep testsuite- | cut -d '-' -f2)"
 TEST_SUITE=''
