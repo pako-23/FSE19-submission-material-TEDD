@@ -81,9 +81,10 @@ EOF
     v.cpus = VM_CPUS
   end
 
-  config.vm.provider 'virtualbox' do |v|
+  config.vm.provider 'virtualbox' do |v, override|
     v.memory = VM_MEMORY
     v.cpus = VM_CPUS
+    override.vm.synced_folder '.', '/vagrant', type: 'virtualbox'
   end
 
   config.vm.provision :shell, inline: $script, privileged: false
