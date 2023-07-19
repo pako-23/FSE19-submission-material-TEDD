@@ -32,8 +32,8 @@ Vagrant.configure('2') do |config|
       docker-ce \
       docker-ce-cli \
       containerd.io \
-      google-chrome-stable=114.0.* \
-      firefox-esr=102.12.* \
+      google-chrome-stable \
+      firefox-esr \
       xvfb
     sudo apt-get autoremove -y
     sudo usermod -aG docker vagrant
