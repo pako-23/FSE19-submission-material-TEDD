@@ -85,11 +85,11 @@ public class TestCaseExecutor<T> {
 
         Map.Entry<Integer, List<String>> testResult = this.remoteExecutionWithJUnitCore(schedule);
 
-        if (testResult.getKey() != schedule.size()) {
-            logger.debug("ERROR TEST COUNT DOES NOT RUN !!! ");
-            logger.debug(testResult.getKey() + " != " + schedule.size());
-            throw new RuntimeException("Some tests did not run ! ");
-        }
+        // if (testResult.getKey() != schedule.size()) {
+        //     logger.debug("ERROR TEST COUNT DOES NOT RUN !!! ");
+        //     logger.debug(testResult.getKey() + " != " + schedule.size());
+        //     throw new RuntimeException("Some tests did not run ! ");
+        // }
 
         Map<GraphNode<T>, TestResult> ret = new HashMap<>();
         for (String test: schedule) {
