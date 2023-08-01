@@ -4,7 +4,7 @@ num_execution=$1
 
 properties_file=$PWD/src/main/resources/app.properties
 cat >$properties_file <<EOL
-db_name=mrbs
+db_name=claroline
 db_port=3306
 app_port=3000
 browser=chrome
