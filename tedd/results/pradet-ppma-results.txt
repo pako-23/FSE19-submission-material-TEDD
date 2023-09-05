@@ -1,0 +1,17 @@
+2023-07-19 14:48:14,371 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of uninteresting dependencies removed = Number of untestable dependencies. Stop refinement at iteration 229
+2023-07-19 14:48:14,371 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of uninteresting/implicit dependencies: 24
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Finished after 229 iterations
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Executed 2117 tests in total, avg.: 9
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Spent 1.9326778157552083 h executing tests, avg.: 30.382708s per refinement step
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - ==================
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of tests: 23
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of dependencies: 253
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of dependencies added while checking for missing: 0
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of false dependencies: 207
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of manifest dependencies: 22
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of missing dependencies recovered: 0
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Executions: 2117
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Avg executions: 9
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Max executions: 5819
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Time: 1.9326778157552083 h
+2023-07-19 14:48:14,372 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Avg time: 30.382708s

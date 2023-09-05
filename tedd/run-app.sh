@@ -119,8 +119,19 @@ EOF
 container="$(cd "../testsuite-$TEST_SUITE"; ./run-docker.sh -p yes -n "$TEST_SUITE" | tail -1)"
 
 sleep 4s
+./check_proc_memory.sh > "results/${ALGORITHM}_${TEST_SUITE}_memory_usage.log" &
 
-java -cp $classpath "$(get_algorithm "$ALGORITHM")" "$TEST_SUITE"
+java -Xms12G -Xmx16G -cp $classpath "$(get_algorithm "$ALGORITHM")" "$TEST_SUITE"
+
+PID=$(pgrep -f check_proc_memory.sh)
+
+if [ ! -z "$PID" ]; then
+  kill -9 $PID
+  echo "Killed process check_proc_memory.sh with PID $PID"
+else
+  echo "Process check_proc_memory.sh not found"
+fi
 
 docker stop "$container"
 docker rm "$container"
+

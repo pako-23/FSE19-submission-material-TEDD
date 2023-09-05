@@ -1,0 +1,3 @@
+Test runs: 3808
+Test-suite runs: 186
+Execution time: 9341280

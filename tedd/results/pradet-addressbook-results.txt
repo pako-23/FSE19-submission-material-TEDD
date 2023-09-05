@@ -1,0 +1,17 @@
+2023-07-21 11:36:52,983 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of uninteresting/implicit dependencies: 31
+2023-07-21 11:36:52,984 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Finished after 322 iterations
+2023-07-21 11:36:52,984 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Executed 3469 tests in total, avg.: 10
+2023-07-21 11:36:52,984 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Spent 1.749012179904514 h executing tests, avg.: 19.554173s per refinement step
+2023-07-21 11:36:52,984 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - ==================
+2023-07-21 11:36:52,984 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of tests: 27
+2023-07-21 11:36:52,984 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of dependencies: 351
+2023-07-21 11:36:52,984 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of dependencies added while checking for missing: 0
+2023-07-21 11:36:52,984 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of false dependencies: 289
+2023-07-21 11:36:52,985 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of manifest dependencies: 31
+2023-07-21 11:36:52,985 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Number of missing dependencies recovered: 0
+2023-07-21 11:36:52,985 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Executions: 3469
+2023-07-21 11:36:52,985 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Avg executions: 10
+2023-07-21 11:36:52,985 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Max executions: 9477
+2023-07-21 11:36:52,985 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Time: 1.749012179904514 h
+2023-07-21 11:36:52,985 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - Avg time: 19.554173s
+2023-07-21 11:36:52,985 INFO org.mb.tedd.algorithm.refinement.DependencyRefiner - ==================

@@ -1,0 +1,1404 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.mb:tedd:jar:1.0
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for edu.mit.jwi:edu.mit.jwi:jar should not point at files within the project directory, ${project.basedir}/src/main/resources/lib/edu.mit.jwi.jar will be unresolvable by dependent projects @ line 96, column 25
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for edu.cmu.lti:jawjaw:jar should not point at files within the project directory, ${project.basedir}/src/main/resources/lib/jawjaw.jar will be unresolvable by dependent projects @ line 110, column 25
+[[1;33mWARNING[m] 'dependencies.dependency.systemPath' for edu.cmu.lti:ws4j:jar should not point at files within the project directory, ${project.basedir}/src/main/resources/lib/ws4j.jar will be unresolvable by dependent projects @ line 117, column 25
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------------------< [0;36morg.mb:tedd[0;1m >-----------------------------[m
+[[1;34mINFO[m] [1mBuilding tedd 1.0[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/collections/eclipse-collections-api/maven-metadata.xml
+Downloading from CogCompSoftware: http://cogcomp.org/m2repo/org/eclipse/collections/eclipse-collections-api/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/collections/eclipse-collections-api/maven-metadata.xml
+Downloading from CogcompSoftware: http://cogcomp.org/m2repo/org/eclipse/collections/eclipse-collections-api/maven-metadata.xml
+Progress (1): 2.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/collections/eclipse-collections-api/maven-metadata.xml (2.0 kB at 4.3 kB/s)
+Downloading from CogCompSoftware: http://cogcomp.org/m2repo/org/eclipse/collections/eclipse-collections/maven-metadata.xml
+Downloading from CogcompSoftware: http://cogcomp.org/m2repo/org/eclipse/collections/eclipse-collections/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/collections/eclipse-collections/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/collections/eclipse-collections/maven-metadata.xml
+Progress (1): 2.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/collections/eclipse-collections/maven-metadata.xml (2.0 kB at 20 kB/s)
+Downloading from CogCompSoftware: http://cogcomp.org/m2repo/org/eclipse/collections/eclipse-collections-forkjoin/maven-metadata.xml
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/collections/eclipse-collections-forkjoin/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/eclipse/collections/eclipse-collections-forkjoin/maven-metadata.xml
+Downloading from CogcompSoftware: http://cogcomp.org/m2repo/org/eclipse/collections/eclipse-collections-forkjoin/maven-metadata.xml
+Progress (1): 2.0 kB                    Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/collections/eclipse-collections-forkjoin/maven-metadata.xml (2.0 kB at 23 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/maven-metadata.xml
+Downloading from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/google/guava/guava/maven-metadata.xml
+Downloading from CogcompSoftware: http://cogcomp.org/m2repo/com/google/guava/guava/maven-metadata.xml
+Downloading from CogCompSoftware: http://cogcomp.org/m2repo/com/google/guava/guava/maven-metadata.xml
+Progress (1): 2.7/4.4 kBProgress (1): 4.4 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/maven-metadata.xml (4.4 kB at 54 kB/s)
+Progress (1): 429 B                   Downloaded from sonatype-nexus-snapshots: https://oss.sonatype.org/content/repositories/snapshots/com/google/guava/guava/maven-metadata.xml (429 B at 89 B/s)
+Downloading from CogCompSoftware: http://cogcomp.org/m2repo/edu/cmu/cs/ark/ChuLiuEdmonds/1.0-SNAPSHOT/maven-metadata.xml
+Downloading from CogcompSoftware: http://cogcomp.org/m2repo/edu/cmu/cs/ark/ChuLiuEdmonds/1.0-SNAPSHOT/maven-metadata.xml
+Progress (1): 983 BProgress (2): 983 B | 983 B                           Downloaded from CogCompSoftware: http://cogcomp.org/m2repo/edu/cmu/cs/ark/ChuLiuEdmonds/1.0-SNAPSHOT/maven-metadata.xml (983 B at 840 B/s)
+Downloaded from CogcompSoftware: http://cogcomp.org/m2repo/edu/cmu/cs/ark/ChuLiuEdmonds/1.0-SNAPSHOT/maven-metadata.xml (983 B at 772 B/s)
+[[1;33mWARNING[m] The POM for edu.illinois.cs.cogcomp:illinois-prepsrl-model:jar:3.1 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mtedd[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] Copying 568 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mtedd[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  15.605 s
+[[1;34mINFO[m] Finished at: 2023-07-23T03:27:25Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mtestsuite-mrbs:testsuite-mrbs[0;1m >--------------------[m
+[[1;34mINFO[m] [1mBuilding testsuite-mrbs 1.0-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/selenium/selenium-api/maven-metadata.xml
+Progress (1): 2.7/4.9 kBProgress (1): 4.9 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/selenium/selenium-api/maven-metadata.xml (4.9 kB at 14 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/seleniumhq/selenium/selenium-support/maven-metadata.xml
+Progress (1): 2.7/5.1 kBProgress (1): 5.1 kB                        Downloaded from central: https://repo.maven.apache.org/maven2/org/seleniumhq/selenium/selenium-support/maven-metadata.xml (5.1 kB at 46 kB/s)
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36mtestsuite-mrbs[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.7.0:compile[m [1m(default-compile)[m @ [36mtestsuite-mrbs[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  2.750 s
+[[1;34mINFO[m] Finished at: 2023-07-23T03:27:31Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+/home/vagrant/workspace/FSE19-submission-material/tedd
+=====================================================================================
+================================[ Execution ]========================================
+=====================================================================================
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+2023-07-23 03:27:45,469 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 1 + 0
+2023-07-23 03:27:45,470 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:27:45,470 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:27:45,485 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddRoomTest failed
+2023-07-23 03:27:45,490 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 2
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+2023-07-23 03:27:54,961 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 1 + 0
+2023-07-23 03:27:54,962 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:27:54,963 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:27:54,970 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test CheckBuildingRoomTest failed
+2023-07-23 03:27:54,971 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MyBuilding"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+2023-07-23 03:28:04,523 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 1 + 0
+2023-07-23 03:28:04,524 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:28:04,524 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:28:04,533 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddEntryTest failed
+2023-07-23 03:28:04,534 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='dwm_areas']/ul/li[3]/a/span"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+2023-07-23 03:28:14,114 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 1 + 0
+2023-07-23 03:28:14,114 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:28:14,115 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:28:14,123 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test CheckEntryTest failed
+2023-07-23 03:28:14,123 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MyBuilding"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:28:21,754 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 2 + 0
+2023-07-23 03:28:21,755 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:28:21,755 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:28:21,762 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddLongNameRoomNegativeTest failed
+2023-07-23 03:28:21,763 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 2
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:28:36,100 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 3 + 0
+2023-07-23 03:28:36,101 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:28:36,105 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:28:36,112 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test RemoveEntryTest failed
+2023-07-23 03:28:36,112 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MyBuilding"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:28:50,370 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 3 + 0
+2023-07-23 03:28:50,391 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:28:50,391 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:28:50,399 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddMultipleEntriesSameRoomSameDayTest failed
+2023-07-23 03:28:50,399 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MyBuilding"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:29:04,800 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 3 + 0
+2023-07-23 03:29:04,800 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:29:04,801 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:29:04,807 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddMultipleEntriesSameRoomDifferentDaysTest failed
+2023-07-23 03:29:04,808 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MyBuilding"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:29:19,486 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 3 + 0
+2023-07-23 03:29:19,487 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:29:19,487 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:29:19,494 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test SearchMultipleEntriesTest failed
+2023-07-23 03:29:19,495 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='search_results_wrapper']/div[6]/div[3]/div[1]/div/table/thead/tr/th[2]"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:29:28,980 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 3 + 0
+2023-07-23 03:29:28,980 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:29:28,981 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:29:28,985 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test RemoveRoomTest failed
+2023-07-23 03:29:28,986 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 2
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:29:43,902 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 3 + 0
+2023-07-23 03:29:43,903 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:29:43,903 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:29:43,911 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddMultipleRoomsTest failed
+2023-07-23 03:29:43,913 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: MyBuilding
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:29:59,178 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 3 + 0
+2023-07-23 03:29:59,179 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:29:59,180 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:29:59,187 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test CheckMultipleBuildingRoomsTest failed
+2023-07-23 03:29:59,187 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MyBuilding"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:30:13,363 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 3 + 0
+2023-07-23 03:30:13,363 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:30:13,364 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:30:13,370 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddMultipleEntriesDifferentRoomsSameDayTest failed
+2023-07-23 03:30:13,371 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MyBuilding"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:30:27,415 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 3 + 0
+2023-07-23 03:30:27,416 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:30:27,416 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:30:27,424 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddMultipleEntriesDifferentRoomsDifferentDaysTest failed
+2023-07-23 03:30:27,426 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MyBuilding"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:30:41,403 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 3 + 0
+2023-07-23 03:30:41,404 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:30:41,405 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:30:41,411 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test CheckMultipleEntriesTest failed
+2023-07-23 03:30:41,412 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MyBuilding"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:30:55,561 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 3 + 0
+2023-07-23 03:30:55,562 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:30:55,562 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:30:55,568 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test RemoveMultipleEntriesTest failed
+2023-07-23 03:30:55,569 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MyBuilding"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:31:05,034 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 3 + 0
+2023-07-23 03:31:05,035 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:31:05,035 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:31:05,042 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test RemoveMultipleRoomsTest failed
+2023-07-23 03:31:05,042 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 2
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:31:14,574 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 3 + 0
+2023-07-23 03:31:14,574 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:31:14,574 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:31:14,579 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddAndRemoveSerialEntryTest failed
+2023-07-23 03:31:14,580 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 2
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:31:29,063 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 3 + 0
+2023-07-23 03:31:29,064 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:31:29,064 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:31:29,070 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test RemoveBuildingTest failed
+2023-07-23 03:31:29,070 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: Cannot locate element with text: MyBuilding
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:31:36,499 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 2 + 0
+2023-07-23 03:31:36,499 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 03:31:36,500 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:31:48,477 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 2 + 0
+2023-07-23 03:31:48,478 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:31:48,478 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:31:48,484 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test CheckBuildingRoomTest failed
+2023-07-23 03:31:48,485 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='day_main']/thead/tr/th[2]/a"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:32:00,647 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 2 + 0
+2023-07-23 03:32:00,648 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:32:00,648 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:32:00,654 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddEntryTest failed
+2023-07-23 03:32:00,655 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//table[@id='day_main']/tbody/tr/td[2]/div/a)[1]"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:32:12,695 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 2 + 0
+2023-07-23 03:32:12,695 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:32:12,696 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:32:12,702 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test CheckEntryTest failed
+2023-07-23 03:32:12,705 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='day_main']/tbody/tr[1]/td[2]/div/div[2]/a"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:32:32,494 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 5 + 0
+2023-07-23 03:32:32,495 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:32:32,495 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:32:32,501 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test RemoveEntryTest failed
+2023-07-23 03:32:32,502 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"My Event"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:32:52,467 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 5 + 0
+2023-07-23 03:32:52,468 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:32:52,469 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:32:52,475 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddMultipleEntriesSameRoomSameDayTest failed
+2023-07-23 03:32:52,475 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='day_main']/tbody/tr[1]/td[2]/div/a"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:33:12,132 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 5 + 0
+2023-07-23 03:33:12,133 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:33:12,133 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:33:12,144 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddMultipleEntriesSameRoomDifferentDaysTest failed
+2023-07-23 03:33:12,145 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='day_main']/tbody/tr[1]/td[2]/div/a"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:33:31,827 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 5 + 0
+2023-07-23 03:33:31,828 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:33:31,830 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:33:31,835 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test SearchMultipleEntriesTest failed
+2023-07-23 03:33:31,836 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='search_results_wrapper']/div[6]/div[3]/div[1]/div/table/thead/tr/th[2]"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:33:51,877 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 5 + 0
+2023-07-23 03:33:51,878 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:33:51,878 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:33:51,883 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test RemoveRoomTest failed
+2023-07-23 03:33:51,884 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='rooms_table_wrapper']/div[6]/div[1]/div[2]/table/tbody/tr[1]/td/div/a/img"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:34:40,396 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 13 + 0
+2023-07-23 03:34:40,397 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 03:34:40,397 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:35:15,664 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 11 + 0
+2023-07-23 03:35:15,666 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:35:15,666 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:35:15,672 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test SearchMultipleEntriesTest failed
+2023-07-23 03:35:15,672 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:36:26,495 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 20 + 0
+2023-07-23 03:36:26,495 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 03:36:26,496 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:36:43,491 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 4 + 0
+2023-07-23 03:36:43,492 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:36:43,492 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:36:43,502 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test CheckEntryTest failed
+2023-07-23 03:36:43,503 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='day_main']/tbody/tr[1]/td[2]/div/div[2]/a"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:37:08,274 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 7 + 0
+2023-07-23 03:37:08,275 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:37:08,275 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:37:08,280 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test RemoveEntryTest failed
+2023-07-23 03:37:08,281 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"My Event"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:38:15,934 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 19 + 0
+2023-07-23 03:38:15,934 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 03:38:15,935 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:39:33,244 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 21 + 0
+2023-07-23 03:39:33,244 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 03:39:33,246 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:40:53,405 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 21 + 0
+2023-07-23 03:40:53,406 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 03:40:53,407 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:42:16,548 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 21 + 0
+2023-07-23 03:42:16,549 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 03:42:16,550 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:43:44,521 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 21 + 0
+2023-07-23 03:43:44,522 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 03:43:44,522 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:44:26,399 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 11 + 0
+2023-07-23 03:44:26,399 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:44:26,400 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:44:26,406 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test SearchMultipleEntriesTest failed
+2023-07-23 03:44:26,407 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:45:48,000 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 20 + 0
+2023-07-23 03:45:48,000 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 03:45:48,001 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:47:03,538 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 21 + 0
+2023-07-23 03:47:03,539 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 03:47:03,540 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:48:27,642 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 20 + 0
+2023-07-23 03:48:27,643 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:48:27,644 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:48:27,649 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddAndRemoveSerialEntryTest failed
+2023-07-23 03:48:27,652 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:49:08,852 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 11 + 0
+2023-07-23 03:49:08,853 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:49:08,854 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:49:08,864 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test SearchMultipleEntriesTest failed
+2023-07-23 03:49:08,865 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.junit.ComparisonFailure: expected:<[Description for MyEvent1]> but was:<[07:00:00 - Sunday 23 July 2023]>
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:50:30,154 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 19 + 0
+2023-07-23 03:50:30,155 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 03:50:30,155 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:52:06,301 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 20 + 0
+2023-07-23 03:52:06,302 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:52:06,305 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:52:06,316 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddAndRemoveSerialEntryTest failed
+2023-07-23 03:52:06,316 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:53:39,767 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 20 + 0
+2023-07-23 03:53:39,769 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 03:53:39,770 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:54:36,048 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 13 + 0
+2023-07-23 03:54:36,049 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:54:36,050 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:54:36,055 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddMultipleRoomsTest failed
+2023-07-23 03:54:36,055 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Assertion error: java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at tests.AddMultipleRoomsTest.testAddMultipleRooms(AddMultipleRoomsTest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:105)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:94)
+	at org.mb.tedd.algorithm.execution.RemoteJUnitCore.main(RemoteJUnitCore.java:127)
+
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:55:22,845 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 13 + 0
+2023-07-23 03:55:22,845 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:55:22,846 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:55:22,852 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test CheckMultipleBuildingRoomsTest failed
+2023-07-23 03:55:22,853 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.junit.ComparisonFailure: expected:<MyRoom[1(5])> but was:<MyRoom[(10])>
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:56:09,942 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 13 + 0
+2023-07-23 03:56:09,943 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:56:09,943 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:56:09,950 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddMultipleEntriesDifferentRoomsSameDayTest failed
+2023-07-23 03:56:09,951 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='day_main']/tbody/tr[1]/td[2]/div/a"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:56:53,358 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 13 + 0
+2023-07-23 03:56:53,359 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:56:53,360 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:56:53,366 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddMultipleEntriesDifferentRoomsDifferentDaysTest failed
+2023-07-23 03:56:53,366 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='day_main']/tbody/tr[1]/td[3]/div/a"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:57:36,180 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 13 + 0
+2023-07-23 03:57:36,181 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:57:36,182 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:57:36,188 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test CheckMultipleEntriesTest failed
+2023-07-23 03:57:36,189 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='day_main']/tbody/tr[1]/td[2]/div/div[2]/a"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:58:11,719 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 12 + 0
+2023-07-23 03:58:11,719 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:58:11,720 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:58:11,725 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test SearchMultipleEntriesTest failed
+2023-07-23 03:58:11,725 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:58:51,802 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 12 + 0
+2023-07-23 03:58:51,803 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:58:51,803 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:58:51,809 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test RemoveMultipleEntriesTest failed
+2023-07-23 03:58:51,810 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MyEvent1"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 03:59:32,562 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 12 + 0
+2023-07-23 03:59:32,563 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 03:59:32,564 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 03:59:32,572 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test RemoveMultipleRoomsTest failed
+2023-07-23 03:59:32,573 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='rooms_table_wrapper']/div[6]/div[1]/div[2]/table/tbody/tr[1]/td/div/a/img"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:00:13,649 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 13 + 0
+2023-07-23 04:00:13,650 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 04:00:13,650 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:00:49,010 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 12 + 0
+2023-07-23 04:00:49,011 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 04:00:49,011 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 04:00:49,017 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test SearchMultipleEntriesTest failed
+2023-07-23 04:00:49,018 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:01:31,820 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 13 + 0
+2023-07-23 04:01:31,821 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 04:01:31,822 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 04:01:31,834 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test CheckMultipleBuildingRoomsTest failed
+2023-07-23 04:01:31,835 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='day_main']/thead/tr/th[2]/a"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:02:14,794 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 13 + 0
+2023-07-23 04:02:14,794 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 04:02:14,795 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 04:02:14,801 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddMultipleEntriesDifferentRoomsSameDayTest failed
+2023-07-23 04:02:14,802 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='day_main']/tbody/tr[1]/td[2]/div/a"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:02:57,754 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 13 + 0
+2023-07-23 04:02:57,755 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 04:02:57,756 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 04:02:57,763 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test AddMultipleEntriesDifferentRoomsDifferentDaysTest failed
+2023-07-23 04:02:57,768 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='day_main']/tbody/tr[1]/td[2]/div/a"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:03:41,005 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 13 + 0
+2023-07-23 04:03:41,006 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 04:03:41,006 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 04:03:41,012 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test CheckMultipleEntriesTest failed
+2023-07-23 04:03:41,013 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='day_main']/tbody/tr[1]/td[2]/div/div[2]/a"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:04:24,020 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 13 + 0
+2023-07-23 04:04:24,021 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 04:04:24,022 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 04:04:24,028 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test RemoveMultipleEntriesTest failed
+2023-07-23 04:04:24,028 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MyEvent1"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:05:07,270 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 13 + 0
+2023-07-23 04:05:07,271 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 04:05:07,271 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 04:05:07,277 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test RemoveMultipleRoomsTest failed
+2023-07-23 04:05:07,278 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='rooms_table_wrapper']/div[6]/div[1]/div[2]/table/tbody/tr[1]/td/div/a/img"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:05:51,031 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 14 + 0
+2023-07-23 04:05:51,031 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 04:05:51,032 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:07:00,832 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 21 + 0
+2023-07-23 04:07:00,833 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 04:07:00,834 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:07:56,640 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 17 + 0
+2023-07-23 04:07:56,640 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 04:07:56,641 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 04:07:56,647 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test CheckMultipleEntriesTest failed
+2023-07-23 04:07:56,647 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='day_main']/tbody/tr[1]/td[2]/div/div[2]/a"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:08:32,439 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 12 + 0
+2023-07-23 04:08:32,440 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 04:08:32,440 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 04:08:32,446 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test SearchMultipleEntriesTest failed
+2023-07-23 04:08:32,447 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:09:27,593 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 16 + 0
+2023-07-23 04:09:27,593 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 04:09:27,594 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 04:09:27,603 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test RemoveMultipleEntriesTest failed
+2023-07-23 04:09:27,603 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MyEvent1"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:10:24,576 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 18 + 0
+2023-07-23 04:10:24,577 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 04:10:24,578 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:11:00,052 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 12 + 0
+2023-07-23 04:11:00,053 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 04:11:00,054 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 04:11:00,060 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test SearchMultipleEntriesTest failed
+2023-07-23 04:11:00,060 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:11:54,081 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 16 + 0
+2023-07-23 04:11:54,081 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 04:11:54,082 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 04:11:54,088 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test CheckMultipleEntriesTest failed
+2023-07-23 04:11:54,089 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='day_main']/tbody/tr[1]/td[2]/div/div[2]/a"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:12:48,503 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 16 + 0
+2023-07-23 04:12:48,504 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 04:12:48,505 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 04:12:48,511 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test RemoveMultipleEntriesTest failed
+2023-07-23 04:12:48,512 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"MyEvent1"}
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:13:46,443 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 18 + 0
+2023-07-23 04:13:46,443 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 04:13:46,444 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:14:21,842 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 12 + 0
+2023-07-23 04:14:21,843 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 1
+2023-07-23 04:14:21,844 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+2023-07-23 04:14:21,849 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Test SearchMultipleEntriesTest failed
+2023-07-23 04:14:21,850 INFO org.mb.tedd.algorithm.execution.ResultsCollector - Failure message: org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:15:29,467 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 20 + 0
+2023-07-23 04:15:29,468 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 04:15:29,468 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:16:36,400 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 21 + 0
+2023-07-23 04:16:36,401 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 04:16:36,401 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:17:46,330 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 21 + 0
+2023-07-23 04:17:46,331 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 04:17:46,332 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:18:53,944 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 21 + 0
+2023-07-23 04:18:53,945 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 04:18:53,946 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+ChromeDriver was started successfully.
+2023-07-23 04:20:03,989 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Run 21 + 0
+2023-07-23 04:20:03,990 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Failed 0
+2023-07-23 04:20:03,991 INFO org.mb.tedd.algorithm.execution.RemoteJUnitCore - Ignored 0
+171ad803d353dc16618990ef52b8442c51651c77db9cc8a37818fa52daf0aea4
+171ad803d353dc16618990ef52b8442c51651c77db9cc8a37818fa52daf0aea4
