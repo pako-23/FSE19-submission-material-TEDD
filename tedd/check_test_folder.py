@@ -4,10 +4,11 @@
 import os
 
 if __name__ == '__main__':
+    repos = []
     for root, dirs, files in os.walk('repos'):
         if 'test' in dirs:
-            print(root)
-            print(dirs)
-            print(files)
-            print()
+            repo = root.replace('repos/', '').split('/')[0]+'/'+root.replace('repos/', '').split('/')[1]
+            if repo not in repos:
+                repos.append(repo)
+                print( repo )
     
