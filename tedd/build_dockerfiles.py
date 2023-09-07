@@ -28,11 +28,26 @@ def build_docker_image(repo_path):
     except subprocess.CalledProcessError as e:
         print(f"[ERROR] Error building Docker image for {repo_path}: {e.stderr}")
 
+def delete_docker_images():
+    try:
+        result = subprocess.run(['docker', 'rmi', '-f', '$(docker images -q)'], capture_output=True, check=True, text=True)
+        print(f"Docker images deleted successfully")
+    except subprocess.CalledProcessError as e:
+        print(f"[ERROR] Error deleting Docker images: {e.stderr}")
+
+def docker_system_prune():
+    try:
+        result = subprocess.run(['docker', 'system', 'prune', '-f'], capture_output=True, check=True, text=True)
+        print(f"Docker system pruned successfully")
+    except subprocess.CalledProcessError as e:
+        print(f"[ERROR] Error pruning Docker system: {e.stderr}")
 def main():
     for root, dirs, files in os.walk(BASE_DIR):
         if 'Dockerfile' in files:
             print(f"Verifying Dockerfile in: {root}")
             build_docker_image(root)
+            delete_docker_images()
+            docker_system_prune()
 
 if __name__ == "__main__":
     main()
