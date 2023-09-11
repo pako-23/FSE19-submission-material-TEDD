@@ -1,6 +1,7 @@
 package org.mb.tedd.main;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
@@ -12,6 +13,10 @@ import org.mb.tedd.utils.Properties;
 import org.mb.tedd.algorithm.execution.TestCaseExecutor;
 import org.mb.tedd.algorithm.execution.TestResult;
 import java.io.PrintWriter;
+import java.text.SimpleDateFormat;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class BigTable
 {
@@ -146,12 +151,17 @@ public class BigTable
             Set<List<Map.Entry<Integer, String>>> seqs = algorithm();
             long executionTime = System.currentTimeMillis() - startTime;
 
-            PrintWriter out = new PrintWriter(args[0] + "-big-table.csv");
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss");
+            String timestamp = sdf.format(new Date());
+            String stats_filename = args[0] + "-" + timestamp + "-statistics.txt";
+            String csv_filename = args[0] + "-" + timestamp + "-big-table.csv";
+
+            PrintWriter out = new PrintWriter( csv_filename );
             for (final List<Map.Entry<Integer, String>> seq : seqs)
                 out.println(String.join(", ",  getSchedule(seq)));
             out.close();
 
-            out = new PrintWriter(args[0] + "-big-table-statistics.txt");
+            out = new PrintWriter( stats_filename );
             out.println("Test runs: " + testRuns);
             out.println("Test-suite runs: " + testSuiteRuns);
             out.println("Execution time: " + executionTime);
