@@ -119,7 +119,8 @@ EOF
 container="$(cd "../testsuite-$TEST_SUITE"; ./run-docker.sh -p yes -n "$TEST_SUITE" | tail -1)"
 
 sleep 4s
-./check_proc_memory.sh > "results/${ALGORITHM}_${TEST_SUITE}_memory_usage.log" &
+TIMESTAMP=$(date "+%Y%m%d_%H%M%S")
+./check_proc_memory.sh > "results/${ALGORITHM}_${TEST_SUITE}_memory_usage_${TIMESTAMP}.log" &
 
 java -Xms12G -Xmx16G -cp $classpath "$(get_algorithm "$ALGORITHM")" "$TEST_SUITE"
 
